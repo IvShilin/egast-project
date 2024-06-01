@@ -1,0 +1,19 @@
+ktor:
+    application:
+        modules:
+            - ru.egast.ApplicationKt.module
+    deployment:
+        port: $SERVER_PORT
+    database:
+        jdbcUrl: $DATABASE_URL
+        driverClassName: $DATABASE_DRIVER_CLASS_NAME
+        name: $DATABASE_NAME
+        username: $DATABASE_USERNAME
+        password: $DATABASE_PASSWORD
+        port: $DATABASE_PORT
+        host: $DATABASE_HOST
+
+#jwt:
+#  domain: "https://jwt-provider-domain/"
+#  audience: "jwt-audience"
+#  realm: "ktor sample app"
